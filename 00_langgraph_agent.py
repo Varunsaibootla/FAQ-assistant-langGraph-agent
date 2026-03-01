@@ -1,13 +1,5 @@
 import csv
 import os
-# ---- PROXY & SSL FIRST ----
-os.environ.pop("HTTP_PROXY", None)
-os.environ.pop("HTTPS_PROXY", None)
-os.environ["HTTP_PROXY"] = "http://varunsai.bootla.ext:python%40%23321@87.254.212.120:8080"
-os.environ["HTTPS_PROXY"] = "http://varunsai.bootla.ext:python%40%23321@87.254.212.120:8080"
-os.environ["HF_HUB_DISABLE_SSL_VERIFICATION"] = "1"
-os.environ["CURL_CA_BUNDLE"] = ""
-os.environ["REQUESTS_CA_BUNDLE"] = ""
 from typing import List
 from typing_extensions import TypedDict
 
